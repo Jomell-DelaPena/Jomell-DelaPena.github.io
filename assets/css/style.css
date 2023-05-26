@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;300;400;500;600;700&display=swap');
+
+body{
+	line-height: 1.5;
+	font-family: 'DM Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.banner {
+  background: url("https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/341177776_224529496923053_774627296309684054_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHOkYvN4xl0p1cesW7tN-HdLqDQjvAoGF4uoNCO8CgYXjVOREsZSFqYq19Mg9W8a9f-iq4K-cMJbxX6wOP75XAq&_nc_ohc=3v_GSvum2asAX8TMZ0u&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfDtzb7xsnyZ9m3QFOsidC2apzrMnJ34KuFEOCq4YPp5Rg&oe=64746DA2") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.as {
+  font-weight: 100;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 90px;
+  padding-bottom: 5px;
+}
+
+.about {
+  padding: 30px 0;
+  background-color: rgba(220, 216, 216, 0.931);
+}
+
+.about .title {
+  text-align: left;
+  font-size: 38px;
+  font-weight: 300;
+  padding-bottom: 50px;
+  margin-left: 90px;
+}
+
+.about p {
+  padding-top: 20px;
+  text-align: justify;
+  display: block;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* .card {
+  width: 190px;
+  height: 254px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} */
+
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+  
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
+  }
+}
