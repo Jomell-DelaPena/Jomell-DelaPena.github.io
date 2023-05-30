@@ -18,7 +18,6 @@ body{
 }
 
 .banner {
-  background: url("assets/images/nuphy.jpg") no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
